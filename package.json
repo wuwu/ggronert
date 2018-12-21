@@ -1,0 +1,28 @@
+{
+  "name": "ggronert",
+  "version": "1.0.0",
+  "description": "website galerie gronert build with hugo & semantic ui",
+  "main": "index.js",
+  "dependencies": {
+    "semantic-ui": "^2.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test:unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuwu/ggronert.git"
+  },
+  "keywords": [
+    "gohugo",
+    "semantic",
+    "ui"
+  ],
+  "author": "wuwu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wuwu/ggronert/issues"
+  },
+  "homepage": "https://github.com/wuwu/ggronert#readme"
+}
