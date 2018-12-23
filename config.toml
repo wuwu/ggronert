@@ -1,7 +1,7 @@
 baseURL = "https://galerie-gronert.netlify.com/"
 languageCode = "en-us"
 title = "Galerie Gronert"
-theme = "ananke"
+theme = "wwweihnachten"
 sectionPagesMenu = "main"
 
 [sitemap]
