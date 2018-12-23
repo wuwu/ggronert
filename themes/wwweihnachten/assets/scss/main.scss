@@ -1,0 +1,9 @@
+// assets/sass/template.scss
+$backgroundColor: {{ .Site.Params.Style.backgroundColor | default "#990033" }};
+$textColor: {{ .Site.Params.Style.textColor | default "#000" }};
+
+body {
+  background-color: $backgroundColor;
+  color: $textColor;
+}
+

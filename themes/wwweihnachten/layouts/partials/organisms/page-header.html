@@ -1,0 +1,24 @@
+{{ $featured_image := .Params.featured_image }}
+{{ if $featured_image }}
+{{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
+{{ $featured_image := (trim $featured_image "/") | absURL }}
+<header class="cover bg-top" style="background-image: url('{{ $featured_image }}');">
+  <div>
+    {{ partial "molecules/site-navigation.html" . }}
+    <div>
+      <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">{{ .Title | default .Site.Title }}</h1>
+      {{ with .Params.description }}
+      <h2>
+        {{ . }}
+      </h2>
+      {{ end }}
+    </div>
+  </div>
+</header>
+{{ else }}
+<header>
+  <div class="{{ .Site.Params.background_color_class | default "bg-black" }}">
+    {{ partial "molecules/site-navigation.html" . }}
+  </div>
+</header>
+{{ end }}
