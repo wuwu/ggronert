@@ -6,8 +6,10 @@ $textColor: {{ .Site.Params.textColor | default "#000" }};
 @import "variables";
 @import "gradients";
 @import "base";
+@import "fonts";
 @import "layout";
 @import "header";
+@import "navigation";
 @import "article";
 @import "note";
 

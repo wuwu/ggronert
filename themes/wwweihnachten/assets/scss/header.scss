@@ -3,12 +3,10 @@ header {
   text-align: center;
 }
 
-.navigation {
-  .item {
-    a {
-      text-decoration: none;
-      color: #222;
-      font-size: 16px;
-    }
+.logo {
+  a {
+    color: $whiteColor;
+    text-decoration: none;
+    font-size: 1.75rem;
   }
 }

@@ -1,0 +1,21 @@
+.navigation {
+
+  &--main {
+
+    ul {
+      list-style: none;
+
+      li {
+        display: inline-block;
+
+        a {
+          color: $whiteColor;
+          font-family: $open-sans;
+          text-shadow: 1px 1px 3px #000;
+          text-decoration: none;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

@@ -10,6 +10,30 @@
     "footer";
 }
 
+.header {
+  grid-area: header;
+}
+
+.content {
+  grid-area: content;
+}
+
+.main-nav {
+  grid-area: nav;
+}
+
+.side {
+  grid-area: sidebar;
+}
+
+.ad {
+  grid-area: ad;
+}
+
+.main-footer {
+  grid-area: footer;
+}
+
 @media (min-width: 500px) {
   .wrapper {
     grid-template-columns: 1fr 3fr;
@@ -34,9 +58,5 @@
       "nav    nav     nav"
       "content    content ad"
       "footer footer  footer"
-  }
-
-  nav ul {
-    flex-direction: column;
   }
 }
