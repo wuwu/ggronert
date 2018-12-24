@@ -1,9 +1,13 @@
-// assets/sass/template.scss
-$backgroundColor: {{ .Site.Params.Style.backgroundColor | default "#990033" }};
-$textColor: {{ .Site.Params.Style.textColor | default "#000" }};
 
-body {
-  background-color: $backgroundColor;
-  color: $textColor;
-}
+$backgroundColor: {{ .Site.Params.backgroundColor | default "#990033" }};
+$textColor: {{ .Site.Params.textColor | default "#000" }};
+
+
+@import "variables";
+@import "gradients";
+@import "base";
+@import "layout";
+@import "header";
+@import "article";
+@import "note";
 

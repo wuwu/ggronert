@@ -22,7 +22,5 @@ sectionPagesMenu = "main"
   # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
   featured_image = "/images/gohugo-default-sample-hero-image.jpg"
   recent_posts_number = 2
-  
-  [style]
-    backgroundColor = '#bada55'
-    textColor = '#990033'
+  backgroundColor = '#f7f9f1'
+  textColor = '#222'

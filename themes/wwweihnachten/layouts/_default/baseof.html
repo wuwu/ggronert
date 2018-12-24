@@ -34,16 +34,17 @@
 </head>
 
 <body>
-<pre>{{ .Site.Params.title }}</pre>
-    {{ block "header" . }}{{ partial "organisms/page-header.html" .}}{{ end }}
+    <div class="wrapper">
+        {{ block "header" . }}{{ partial "organisms/page-header.html" .}}{{ end }}
 
-    <!-- Code that all your templates share, like a header -->
-    {{ block "main" . }}
-    <!-- The part of the page that begins to differ between templates -->
-    {{ end }}
-    {{ block "footer" . }}
-    <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
-    {{ end }}
+        <!-- Code that all your templates share, like a header -->
+        {{ block "main" . }}
+        <!-- The part of the page that begins to differ between templates -->
+        {{ end }}
+        {{ block "footer" . }}
+        <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
+        {{ end }}
+    </div>
 </body>
 
 </html>
