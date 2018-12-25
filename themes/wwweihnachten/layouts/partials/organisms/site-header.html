@@ -19,9 +19,10 @@
   </div>
 </header>
 {{ else }}
-<header>
-  <div class="{{ .Site.Params.background_color_class | default "bg-black" }}">
-    {{ partial "molecules/site-navigation.html" . }}
-  </div>
+<header class="header header--cover {{ .Site.Params.background_color_class | default "bg-black" }}">
+    <div class="header__topbar topbar topbar--with-logo">
+      {{ partial "atoms/logo.html" . }}
+      {{ partial "molecules/site-navigation.html" . }}
+    </div>
 </header>
 {{ end }}

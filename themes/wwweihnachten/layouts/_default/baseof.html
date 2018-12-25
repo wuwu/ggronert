@@ -35,9 +35,9 @@
 
 <body>
     <div class="wrapper">
-        {{ block "header" . }}{{ partial "organisms/page-header.html" .}}{{ end }}
+        {{ block "header" . }}{{ partial "organisms/site-header.html" .}}{{ end }}
         {{ block "main" . }}{{ end }}
-        {{ block "footer" . }}{{ end }}
+        {{ block "footer" . }}{{ partial "organisms/site-footer.html" .}}{{ end }}
     </div>
 </body>
 

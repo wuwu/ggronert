@@ -1,25 +1,15 @@
 {{ define "main" }}
-<div class="content">
-<article class="article article--user gradient-2">
-  <main>
+<section class="content content--profile">
 {{ range $.Site.Data.user.list }}
 
-{{ partial "profile.html" . }}
+  {{ partial "profile.html" . }}
 
 {{ end }}
-  </main>
-  <section class="paginator">
-    {{ range .Paginator.Pages }}
-    <div>
-      {{/*
-      Note we can use `.Render` here for items just in this section, instead of a partial to pull in items for the list
-      page. https://gohugo.io/functions/render/
-      */}}
-      {{ .Render "summary" }}
-    </div>
-    {{ end }}
-  </section>
-  {{ template "_internal/pagination.html" . }}
-</article>
-</div>
+</section>
+<section class="paginator">
+  {{ range .Paginator.Pages }}
+    {{ partial "profile.html" . }}
+  {{ end }}
+</section>
+{{ template "_internal/pagination.html" . }}
 {{ end }}

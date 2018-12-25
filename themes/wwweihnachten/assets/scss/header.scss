@@ -1,6 +1,23 @@
-header {
+.header {
   color: rgba(255,255,255,.78);
   text-align: center;
+  padding: $defaultPadding;
+  text-shadow: 1px 1px 3px #000;
+  
+  &__topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    .navigation--main {
+      flex-grow: 1;
+    }
+  }
+  &.bg-black {
+    background-color: $blackColor;
+    height: 72px;
+
+  }
 }
 
 .logo {

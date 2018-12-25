@@ -1,0 +1,13 @@
+.footer {
+
+  &--site {
+    align-items: center;
+      background-color: $footerBackgroundColor;
+      padding: $defaultPadding;
+    
+    a {
+      color: $whiteColor;
+      text-decoration: none;
+    }
+  }
+}

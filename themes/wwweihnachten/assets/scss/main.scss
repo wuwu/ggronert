@@ -1,15 +1,13 @@
 
-$backgroundColor: {{ .Site.Params.backgroundColor | default "#990033" }};
-$textColor: {{ .Site.Params.textColor | default "#000" }};
-
-
 @import "variables";
 @import "gradients";
 @import "base";
-@import "fonts";
 @import "layout";
+@import "fonts";
 @import "header";
 @import "navigation";
 @import "article";
+@import "profile";
+@import "footer";
 @import "note";
 
