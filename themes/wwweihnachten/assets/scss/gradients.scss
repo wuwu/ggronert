@@ -1,0 +1,9 @@
+.gradient-1 {
+  background: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+}
+
+.gradient-2 {
+  background: #355C7D;
+  /* fallback for old browsers */
+  background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
+}

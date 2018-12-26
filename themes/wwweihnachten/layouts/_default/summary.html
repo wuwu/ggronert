@@ -1,0 +1,15 @@
+  <div class="summary">
+    {{ if .Date }}
+      <div class="summary__datedate">
+        {{ .Date.Format "January 2, 2006" }}
+      </div>
+    {{ end }}
+    <h1 class="summary__headline">
+      <a href="{{ .URL }}" class="link black dim">
+        {{ .Title }}
+      </a>
+    </h1>
+    <div class="summary__content">
+      {{ .Summary  }}
+    </div>
+  </div>

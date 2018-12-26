@@ -1,0 +1,137 @@
+pre, .pre  {
+  overflow-x: auto;
+  overflow-y: hidden;
+  overflow:   scroll;
+}
+
+
+pre  code {
+  display: block;
+  padding: 1.5em 1.5em;
+  white-space: pre;
+  font-size: .875rem;
+  line-height: 2;
+
+}
+
+
+pre {
+  background-color: #222;
+  color: #ddd;
+  white-space: pre;
+
+  -webkit-hyphens: none;
+
+      -ms-hyphens: none;
+
+          hyphens: none;
+  position: relative;
+}
+
+
+/* pagination.html: https://github.com/spf13/hugo/blob/master/tpl/tplimpl/template_embedded.go#L117 */
+
+
+.pagination {
+  margin: 3rem 0;
+}
+
+
+.pagination li {
+  display: inline-block;
+  margin-right: .375rem;
+  font-size: .875rem;
+  margin-bottom: 2.5em;
+}
+
+
+.pagination li a {
+  padding: .5rem .625rem;
+  background-color: white;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+
+.pagination li.disabled {
+  display: none;
+}
+
+
+.pagination li.active a:link,
+.pagination li.active a:active,
+.pagination li.active a:visited {
+  background-color: #ddd;
+}
+
+
+#TableOfContents ul li {
+  margin-bottom: 1em;
+}
+
+
+.facebook, .twitter, .instagram, .youtube, .github, .gitlab, .linkedin, .medium {
+  fill: #BABABA;
+}
+
+
+.new-window {
+  opacity: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+.link-transition:hover .new-window{
+  opacity: 1;
+}
+
+
+.facebook:hover {
+  fill: #3b5998;
+}
+
+
+.twitter:hover {
+  fill: #1da1f2;
+}
+
+
+.instagram:hover {
+  fill: #e1306c;
+}
+
+
+.youtube:hover {
+  fill: #cd201f;
+}
+
+
+.github:hover {
+  fill: #6cc644;
+}
+
+
+.gitlab:hover {
+  fill: #FC6D26;
+}
+
+
+.linkedin:hover {
+  fill: #0077b5
+}
+
+
+.medium:hover {
+  fill: #0077b5
+}
+
+
+/* Put your custom styles here and run `npm start` from the "src" directory on */
+
+
+#TableOfContents ul li {
+  margin-bottom: 1em;
+}

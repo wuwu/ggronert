@@ -1,0 +1,63 @@
+<!-- TODO: Add follow intents where available TODO: Revisit color and hover color -->
+<div hidden>
+  <span id="new-window-0">Opens in a new window</span>
+  <span id="new-window-1">Opens an external site</span>
+  <span id="new-window-2">Opens an external site in a new window</span>
+</div>
+{{ $icon_size := "32px" }}
+{{ with .Param "facebook" }}
+<a href="{{ . }}" target="_blank" class="link link-transition facebook " title="Facebook link" rel="noopener"
+  aria-describedby="new-window-0">
+  {{ partial "svg/facebook.svg" (dict "size" $icon_size) }}
+  {{- partial "atoms/new-window-icon.html" . -}}
+</a>
+{{ end }}
+{{ with .Param "twitter" }}
+<a href="{{ . }}" target="_blank" class="link link-transition twitter " title="Twitter link" rel="noopener"
+  aria-describedby="new-window-0">
+  {{ partial "svg/twitter.svg" (dict "size" $icon_size) }}
+  {{- partial "atoms/new-window-icon.html" . -}}
+</a>
+{{ end }}
+{{ with .Param "instagram" }}
+<a href="{{ . }}" target="_blank" class="link link-transition instagram " title="Instagram link" rel="noopener"
+  aria-describedby="new-window-0">
+  {{ partial "svg/instagram.svg" (dict "size" $icon_size) }}
+  {{- partial "atoms/new-window-icon.html" . -}}
+</a>
+{{ end }}
+{{ with .Param "youtube" }}
+<a href="{{ . }}" target="_blank" class="link link-transition youtube " title="Youtube link" rel="noopener"
+  aria-describedby="new-window-0">
+  {{ partial "svg/youtube.svg" (dict "size" $icon_size) }}
+  {{- partial "atoms/new-window-icon.html" . -}}
+</a>
+{{ end }}
+{{ with .Param "linkedin" }}
+<a href="{{ . }}" target="_blank" class="link link-transition linkedin " title="LinkedIn link" rel="noopener"
+  aria-describedby="new-window-0">
+  {{ partial "svg/linkedin.svg" (dict "size" $icon_size) }}
+  {{- partial "atoms/new-window-icon.html" . -}}
+</a>
+{{ end }}
+{{ with .Param "github" }}
+<a href="{{ . }}" target="_blank" class="link link-transition github " title="Github link" rel="noopener"
+  aria-describedby="new-window-0">
+  {{ partial "svg/github.svg" (dict "size" $icon_size) }}
+  {{- partial "atoms/new-window-icon.html" . -}}
+</a>
+{{ end }}
+{{ with .Param "gitlab" }}
+<a href="{{ . }}" target="_blank" class="link link-transition gitlab " title="Gitlab link" rel="noopener"
+  aria-describedby="new-window-0">
+  {{ partial "svg/gitlab.svg" (dict "size" $icon_size) }}
+  {{- partial "atoms/new-window-icon.html" . -}}
+</a>
+{{ end }}
+{{ with .Param "medium" }}
+<a href="{{ . }}" target="_blank" class="link link-transition medium " title="Medium link" rel="noopener"
+  aria-describedby="new-window-0">
+  {{ partial "svg/medium.svg" (dict "size" $icon_size) }}
+  {{- partial "atoms/new-window-icon.html" . -}}
+</a>
+{{ end }}

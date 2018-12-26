@@ -1,0 +1,12 @@
+
+
+<!-- {{ printf "%#v" . }} -->
+<div class="card card--profile">
+  <h2>{{ .name }}</h2>
+  <picture>
+    <source media="(max-width: 799px)" srcset="{{ .avatar }}">
+      <source media="(min-width: 800px)" srcset="{{ .avatar }}">
+        <img src="{{ .avatar }}" alt="{{ .name }} - profile">
+      </picture>
+      <p>City: <strong>{{ .city }}</strong></p>
+</div>

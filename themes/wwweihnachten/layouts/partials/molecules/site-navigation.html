@@ -1,0 +1,13 @@
+{{ if .Site.Menus.main }}
+<nav class="navigation navigation--main" role="navigation">
+      <ul>
+        {{ range .Site.Menus.main }}
+        <li class="item">
+          <a href="{{ .URL }}" title="{{ .Name }} page">
+            {{ .Name }}
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+  </nav>
+{{ end }}
