@@ -1,0 +1,22 @@
+.pagination {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+
+  .page-item {
+    border: solid 1px $paginationItemBorderColor;
+    padding: 3px;
+    background-color: $paginationItemBackgroundColor;
+    border-radius: $paginationBorderRadius;
+    min-width: 25px;
+    min-height: 25px;
+    text-align: center;
+    a {
+      color: $whiteColor;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  }
+}

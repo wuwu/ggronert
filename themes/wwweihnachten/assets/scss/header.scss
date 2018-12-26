@@ -3,7 +3,14 @@
   text-align: center;
   padding: $defaultPadding;
   text-shadow: 1px 1px 3px #000;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &--cover {
+    background-position: center;
+    background-size: cover;
+  }
+
   &__topbar {
     display: flex;
     justify-content: space-between;

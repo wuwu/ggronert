@@ -1,7 +1,7 @@
 ---
 date: 2017-04-09T10:58:08-04:00
 description: "The Grand Hall"
-featured_image: "/images/Pope-Edouard-de-Beaumont-1844.jpg"
+featured_image: "/images/Franz_Marc_004.jpg"
 tags: ["scene"]
 title: "Chapter I: The Grand Hall"
 ---
@@ -10,12 +10,27 @@ Three hundred and forty-eight years, six months, and nineteen days ago
 to-day, the Parisians awoke to the sound of all the bells in the triple
 circuit of the city, the university, and the town ringing a full peal.
 
+{{< figure src="/images/Franz_Marc_Blaue_Pferde.jpg" title="Franz Marc Blaue Pferde" >}}
+
+
 The sixth of January, 1482, is not, however, a day of which history has
 preserved the memory. There was nothing notable in the event which thus
 set the bells and the bourgeois of Paris in a ferment from early morning.
 It was neither an assault by the Picards nor the Burgundians, nor a hunt
 led along in procession, nor a revolt of scholars in the town of Laas, nor
 an entry of “our much dread lord, monsieur the king,” nor even a pretty
+
+{{< highlight html >}}
+<section id="main">
+  <div>
+   <h1 id="title">{{ .Title }}</h1>
+    {{ range .Pages }}
+        {{ .Render "summary"}}
+    {{ end }}
+  </div>
+</section>
+{{< /highlight >}}
+
 hanging of male and female thieves by the courts of Paris. Neither was it
 the arrival, so frequent in the fifteenth century, of some plumed and
 bedizened embassy. It was barely two days since the last cavalcade of that

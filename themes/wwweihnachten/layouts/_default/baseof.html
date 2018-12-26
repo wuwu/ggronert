@@ -37,7 +37,7 @@
     <div class="wrapper">
         {{ block "header" . }}{{ partial "organisms/site-header.html" .}}{{ end }}
         {{ block "main" . }}{{ end }}
-        {{ block "footer" . }}{{ partial "organisms/site-footer.html" .}}{{ end }}
+        {{ block "footer" . }}{{ partialCached "organisms/site-footer.html" .}}{{ end }}
     </div>
 </body>
 

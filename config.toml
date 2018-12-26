@@ -1,10 +1,11 @@
 baseURL = "https://galerie-gronert.netlify.com/"
 languageCode = "en-us"
-title = "Artsy Gallery"
+title = "Krauter Garden"
 theme = "wwweihnachten"
 sectionPagesMenu = "main"
-Paginate = 3
-
+Paginate = 7
+pygmentsCodeFences = true
+pygmentsUseClasses = true
 [sitemap]
   changefreq = "monthly"
   priority = 0.5

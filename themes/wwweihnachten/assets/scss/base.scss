@@ -6,3 +6,13 @@ body {
   background-color: $backgroundColor;
   color: $textColor;
 }
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+code {
+  margin: $defaultPadding * .5;
+}
