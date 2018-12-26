@@ -10,4 +10,4 @@
 	url = https://github.com/gcushen/hugo-academic.git
 [submodule "krauter_content"]
 	path = krauter_content
-	url = git@github.com:wuwu/krauter_content.git
+	url = https://github.com/wuwu/krauter_content.git
