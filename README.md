@@ -1,2 +1,4 @@
 # ggronert
-gohugo site for art gallery - experminat
+gohugo site for art gallery - experminent
+
+
