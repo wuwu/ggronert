@@ -1,47 +1,44 @@
 {{ define "header" }}
-{{/* We can override any block in the baseof file be defining it in the template */}}
 {{ partial "organisms/site-header.html" . }}
 {{ end }}
 
 {{ define "main" }}
 {{ $section := .Site.GetPage "section" .Section }}
 <section class="content">
-<article>
-
-  <header>
-    <p>
-      {{with .CurrentSection.Title }}{{. | upper }}{{end}}
-    </p>
-    <h1>
-      {{- .Title -}}
-    </h1>
-    <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
-      {{- .Date.Format "January 2, 2006" -}}
-    </time>
-    {{/*
-    Show "reading time" and "word count" but only if one of the following are true:
-    1) A global config `params` value is set `show_reading_time = true`
-    2) A section front matter value is set `show_reading_time = true`
-    3) A page front matter value is set `show_reading_time = true`
-    */}}
-    {{ if (or (eq (.Param "show_reading_time") true) (eq $section.Params.show_reading_time true) )}}
-    <span> - {{ .ReadingTime}} minutes read</span>
-    <span> - {{ .WordCount}} words</span>
-    {{ end }}
-  </header>
-
-  <main>
-    {{- .Content -}}
-    {{- partial "tags.html" . -}}
-    <div>
-      {{ template "_internal/disqus.html" . }}
-    </div>
-  </main>
-
-  <aside>
-    {{- partial "menu-contextual.html" . -}}
-  </aside>
-
-</article>
+  <article>
+    <header>
+      <h1>
+        {{- .Title -}}
+      </h1>
+      <p>
+        {{with .CurrentSection.Title }}{{. | upper }}{{end}}
+      </p>
+      <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+        {{- .Date.Format "January 2, 2006" -}}
+      </time>
+      {{/*
+      Show "reading time" and "word count" but only if one of the following are true:
+      1) A global config `params` value is set `show_reading_time = true`
+      2) A section front matter value is set `show_reading_time = true`
+      3) A page front matter value is set `show_reading_time = true`
+      */}}
+      {{ if (or (eq (.Param "show_reading_time") true) (eq $section.Params.show_reading_time true) )}}
+      <span> - {{ .ReadingTime}} minutes read</span>
+      <span> - {{ .WordCount}} words</span>
+      {{ end }}
+    </header>
+    <main>
+      {{- .Content -}}
+      {{- partial "tags.html" . -}}
+    </main>
+    <aside>
+      {{- partial "menu-contextual.html" . -}}
+    </aside>
+    <footer>
+      <p>footer nav hier</p>
+{{if .PrevPage}} <a href="{{.PrevPage.Permalink}}">back</a>{{end}}
+{{if .NextPage}} <a href="{{.NextPage.Permalink}}">nächstes Kraut</a>{{end}}
+    </footer>
+  </article>
 </section>
 {{ end }}

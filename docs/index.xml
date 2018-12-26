@@ -11,29 +11,27 @@
     
     
     <item>
-      <title>Kraut xyz</title>
-      <link>https://wuwu.github.io/ggronert/krauter/slug-here/</link>
+      <title></title>
+      <link>https://wuwu.github.io/ggronert/krauter/test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://wuwu.github.io/ggronert/krauter/slug-here/</guid>
-      <description>ACORUS
-A. calamus (Gewöhnlicher Kalmus)
-Der Gewöhnliche Kalmus ist eine ausdauernde und winterharte Sumpf— oder Wasserpflanze, deren nach Zitrone duftende Blätter und gleichfalls duftende (im Geschmack aber sehr bittere) Wurzelstöcke gelegentlich für Duftkissen verwendet werden. Früher dienten die Wurzelstöcke auch als Hausmittel gegen Koliken. Die dicht gedrängt stehenden, steif aufrechten, schwertförmigen Blätter werden in der Regel ungefähr 60 cm hoch, können in nährstoffreichem Boden aber auch die doppeite Höhe erreichen. Die 5—10 cm langen, kolbenförmigen Blütenstände sind dicht mit kleinen, grünlichen Blüten besetzt und stehen im Winkel von den langen Stengeln ab.</description>
+      <guid>https://wuwu.github.io/ggronert/krauter/test/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Kraut xyz</title>
-      <link>https://wuwu.github.io/ggronert/krauter/slug-here/</link>
+      <title>Fenchel—Riesenysop</title>
+      <link>https://wuwu.github.io/ggronert/krauter/fenchel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://wuwu.github.io/ggronert/krauter/slug-here/</guid>
+      <guid>https://wuwu.github.io/ggronert/krauter/fenchel/</guid>
       <description>AGASTACHE
 A. foeniculum, Syn. A. anethiodora (Fenchel—Riesenysop)
 Diese in Nordamerika heimische Pflanze ist in Europa kaum bekannt. Sie ist eine 75—90cm hohe Staude, deren Laub nach Anis duftet und frisch oder getrocknet für aromatische Tees oder zum Garnieren von Obstsalat verwendet werden kann. Die grob gezähnten Blätter sind oval, 8 cm lang und grün mit weißen Unterseiten. Um die Sommermitte herum erscheinen Stände aus kleinen, zweilippigen, lavendelblauen Blüten. Aus jeder Blüte ragen zwei Staubblätter hervor; in dieser Hinsicht ähnelt die Pflanze dem Ysop (Hyssopus officinalis); die Artbezeichnung foeniculum verweist auf den Fenchel (Foeniculum vulgare), dem der Fenchel—Riesenysop im Duft ähnelt.</description>
     </item>
     
     <item>
-      <title>Krauter Compendium</title>
+      <title>Gewöhnliche Schafgarbe</title>
       <link>https://wuwu.github.io/ggronert/krauter/achillea-millefolium/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -42,6 +40,17 @@ Diese in Nordamerika heimische Pflanze ist in Europa kaum bekannt. Sie ist eine 
 A. millefolium (Gewöhnliche Schafgarbe)
 Die Gewöhnliche Schafgarbe ist eine aufrechte Staude, die heute in erster Linie wegen ihrer Blütenköpfchen kultiviert wird. Die aromatisch duftenden Pflanzen werden 60—90cm hoch und haben stark zerteilte, 5—8cm lange, graugrüne Blätter. Vom Sommer bis zum Beginn des Herbstes erscheinen kleine weiße oder rosa Blütenköpfchen in 5—8 cm breiten, abgeflachten schirmähnlichen Dolden.
 KULTUR. Die Gewöhnliche Schafgarbe ist in Mitteleuropa völlig winterhart. Sie benötigt volle Sonne, wächst in einem gut dränierten, wenig bis mäßig nährstoffreichen Boden sehr schnell und verträgt auch Trockenheit.</description>
+    </item>
+    
+    <item>
+      <title>Gewöhnlicher Kalmus</title>
+      <link>https://wuwu.github.io/ggronert/krauter/kalmus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wuwu.github.io/ggronert/krauter/kalmus/</guid>
+      <description>ACORUS
+A. calamus (Gewöhnlicher Kalmus)
+Der Gewöhnliche Kalmus ist eine ausdauernde und winterharte Sumpf— oder Wasserpflanze, deren nach Zitrone duftende Blätter und gleichfalls duftende (im Geschmack aber sehr bittere) Wurzelstöcke gelegentlich für Duftkissen verwendet werden. Früher dienten die Wurzelstöcke auch als Hausmittel gegen Koliken. Die dicht gedrängt stehenden, steif aufrechten, schwertförmigen Blätter werden in der Regel ungefähr 60 cm hoch, können in nährstoffreichem Boden aber auch die doppeite Höhe erreichen. Die 5—10 cm langen, kolbenförmigen Blütenstände sind dicht mit kleinen, grünlichen Blüten besetzt und stehen im Winkel von den langen Stengeln ab.</description>
     </item>
     
   </channel>
