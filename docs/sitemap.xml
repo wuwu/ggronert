@@ -3,43 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://galerie-gronert.netlify.com/categories/</loc>
+    <loc>https://wuwu.github.io/ggronert/categories/</loc>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://galerie-gronert.netlify.com/krauter/slug-here/</loc>
+    <loc>https://wuwu.github.io/ggronert/krauter/slug-here/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://galerie-gronert.netlify.com/krauter/slug-here/</loc>
+    <loc>https://wuwu.github.io/ggronert/krauter/slug-here/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://galerie-gronert.netlify.com/krauter/achillea-millefolium/</loc>
+    <loc>https://wuwu.github.io/ggronert/krauter/achillea-millefolium/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://galerie-gronert.netlify.com/</loc>
+    <loc>https://wuwu.github.io/ggronert/</loc>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://galerie-gronert.netlify.com/krauter/</loc>
+    <loc>https://wuwu.github.io/ggronert/krauter/</loc>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://galerie-gronert.netlify.com/tags/</loc>
+    <loc>https://wuwu.github.io/ggronert/tags/</loc>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
