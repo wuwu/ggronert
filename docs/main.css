@@ -1,0 +1,425 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+.gradient-1 {
+  background: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%); }
+
+.gradient-2 {
+  background: #355C7D;
+  /* fallback for old browsers */
+  background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); }
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9f1;
+  color: #222; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+code {
+  margin: 8px; }
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  grid-template-areas: "header" "content" "footer"; }
+
+.header {
+  grid-area: header; }
+
+.content {
+  grid-area: content;
+  height: auto;
+  min-height: 100%; }
+  .content--profile {
+    display: flex;
+    flex-wrap: wrap; }
+
+.side {
+  grid-area: sidebar; }
+
+.ad {
+  grid-area: ad; }
+
+.footer--site {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between; }
+
+@media (min-width: 500px) {
+  .wrapper {
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: "header  header header" "....... content ......." "footer footer footer"; }
+  nav ul {
+    display: flex;
+    justify-content: flex-end; } }
+
+@media (min-width: 700px) {
+  .wrapper {
+    min-height: 100vh;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: "header header header" "sidebar" "content" "sidebar" "footer footer footer"; } }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  color: #7b2d43; }
+
+.button {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700; }
+
+.header {
+  color: rgba(255, 255, 255, 0.78);
+  text-align: center;
+  padding: 16px;
+  text-shadow: 1px 1px 3px #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .header--cover {
+    background-position: center;
+    background-size: cover; }
+  .header__topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header__topbar .navigation--main {
+      flex-grow: 1; }
+  .header.bg-black {
+    background-color: #141414;
+    height: 72px; }
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.75rem; }
+
+.navigation--main ul {
+  list-style: none; }
+  .navigation--main ul li {
+    display: inline-block;
+    padding-left: 32px; }
+    .navigation--main ul li a {
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      text-decoration: none;
+      font-weight: 700; }
+
+.article {
+  margin-bottom: 32px; }
+
+.summary__headline {
+  font-size: 1.65rem; }
+  .summary__headline a {
+    color: #7b2d43;
+    text-decoration: none; }
+
+.card--profile {
+  padding: 8px;
+  border: solid 1px #7b2d43;
+  margin: 8px; }
+
+.footer--site {
+  align-items: center;
+  background-color: #7b2d43;
+  padding: 16px; }
+  .footer--site a {
+    color: white;
+    text-decoration: none; }
+
+.pagination {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around; }
+  .pagination .page-item {
+    border: solid 1px #7b2d43;
+    padding: 3px;
+    background-color: #7b2d43;
+    border-radius: 15px;
+    min-width: 25px;
+    min-height: 25px;
+    text-align: center; }
+    .pagination .page-item a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600; }
+
+.note {
+  color: #ffffff; }
+  .note__content {
+    background: white; }
+  .note__meta {
+    background: #f1f1f1;
+    border-top: 1px solid #eee; }
+  .note--featured {
+    box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1); }
+    .note--featured__content {
+      background: #eee; }
+
+/* Background */
+.chroma {
+  color: #f8f8f2;
+  background-color: #272822; }
+
+/* Error */
+.chroma .err {
+  color: #960050;
+  background-color: #1e0010; }
+
+/* LineTableTD */
+.chroma .lntd {
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+/* LineTable */
+.chroma .lntable {
+  border-spacing: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: auto;
+  overflow: auto;
+  display: block; }
+
+/* LineHighlight */
+.chroma .hl {
+  display: block;
+  width: 100%;
+  background-color: #ffffcc; }
+
+/* LineNumbersTable */
+.chroma .lnt {
+  margin-right: 0.4em;
+  padding: 0 0.4em 0 0.4em; }
+
+/* LineNumbers */
+.chroma .ln {
+  margin-right: 0.4em;
+  padding: 0 0.4em 0 0.4em; }
+
+/* Keyword */
+.chroma .k {
+  color: #66d9ef; }
+
+/* KeywordConstant */
+.chroma .kc {
+  color: #66d9ef; }
+
+/* KeywordDeclaration */
+.chroma .kd {
+  color: #66d9ef; }
+
+/* KeywordNamespace */
+.chroma .kn {
+  color: #f92672; }
+
+/* KeywordPseudo */
+.chroma .kp {
+  color: #66d9ef; }
+
+/* KeywordReserved */
+.chroma .kr {
+  color: #66d9ef; }
+
+/* KeywordType */
+.chroma .kt {
+  color: #66d9ef; }
+
+/* NameAttribute */
+.chroma .na {
+  color: #a6e22e; }
+
+/* NameClass */
+.chroma .nc {
+  color: #a6e22e; }
+
+/* NameConstant */
+.chroma .no {
+  color: #66d9ef; }
+
+/* NameDecorator */
+.chroma .nd {
+  color: #a6e22e; }
+
+/* NameException */
+.chroma .ne {
+  color: #a6e22e; }
+
+/* NameFunction */
+.chroma .nf {
+  color: #a6e22e; }
+
+/* NameOther */
+.chroma .nx {
+  color: #a6e22e; }
+
+/* NameTag */
+.chroma .nt {
+  color: #f92672; }
+
+/* Literal */
+.chroma .l {
+  color: #ae81ff; }
+
+/* LiteralDate */
+.chroma .ld {
+  color: #e6db74; }
+
+/* LiteralString */
+.chroma .s {
+  color: #e6db74; }
+
+/* LiteralStringAffix */
+.chroma .sa {
+  color: #e6db74; }
+
+/* LiteralStringBacktick */
+.chroma .sb {
+  color: #e6db74; }
+
+/* LiteralStringChar */
+.chroma .sc {
+  color: #e6db74; }
+
+/* LiteralStringDelimiter */
+.chroma .dl {
+  color: #e6db74; }
+
+/* LiteralStringDoc */
+.chroma .sd {
+  color: #e6db74; }
+
+/* LiteralStringDouble */
+.chroma .s2 {
+  color: #e6db74; }
+
+/* LiteralStringEscape */
+.chroma .se {
+  color: #ae81ff; }
+
+/* LiteralStringHeredoc */
+.chroma .sh {
+  color: #e6db74; }
+
+/* LiteralStringInterpol */
+.chroma .si {
+  color: #e6db74; }
+
+/* LiteralStringOther */
+.chroma .sx {
+  color: #e6db74; }
+
+/* LiteralStringRegex */
+.chroma .sr {
+  color: #e6db74; }
+
+/* LiteralStringSingle */
+.chroma .s1 {
+  color: #e6db74; }
+
+/* LiteralStringSymbol */
+.chroma .ss {
+  color: #e6db74; }
+
+/* LiteralNumber */
+.chroma .m {
+  color: #ae81ff; }
+
+/* LiteralNumberBin */
+.chroma .mb {
+  color: #ae81ff; }
+
+/* LiteralNumberFloat */
+.chroma .mf {
+  color: #ae81ff; }
+
+/* LiteralNumberHex */
+.chroma .mh {
+  color: #ae81ff; }
+
+/* LiteralNumberInteger */
+.chroma .mi {
+  color: #ae81ff; }
+
+/* LiteralNumberIntegerLong */
+.chroma .il {
+  color: #ae81ff; }
+
+/* LiteralNumberOct */
+.chroma .mo {
+  color: #ae81ff; }
+
+/* Operator */
+.chroma .o {
+  color: #f92672; }
+
+/* OperatorWord */
+.chroma .ow {
+  color: #f92672; }
+
+/* Comment */
+.chroma .c {
+  color: #75715e; }
+
+/* CommentHashbang */
+.chroma .ch {
+  color: #75715e; }
+
+/* CommentMultiline */
+.chroma .cm {
+  color: #75715e; }
+
+/* CommentSingle */
+.chroma .c1 {
+  color: #75715e; }
+
+/* CommentSpecial */
+.chroma .cs {
+  color: #75715e; }
+
+/* CommentPreproc */
+.chroma .cp {
+  color: #75715e; }
+
+/* CommentPreprocFile */
+.chroma .cpf {
+  color: #75715e; }
+
+/* GenericDeleted */
+.chroma .gd {
+  color: #f92672; }
+
+/* GenericEmph */
+.chroma .ge {
+  font-style: italic; }
+
+/* GenericInserted */
+.chroma .gi {
+  color: #a6e22e; }
+
+/* GenericStrong */
+.chroma .gs {
+  font-weight: bold; }
+
+/* GenericSubheading */
+.chroma .gu {
+  color: #75715e; }
