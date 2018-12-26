@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "website galerie gronert build with hugo & semantic ui",
   "main": "index.js",
-  "dependencies": {
-    "semantic-ui": "^2.4.2"
-  },
   "devDependencies": {},
   "scripts": {
     "test": "test:unit"
@@ -15,9 +12,7 @@
     "url": "git+https://github.com/wuwu/ggronert.git"
   },
   "keywords": [
-    "gohugo",
-    "semantic",
-    "ui"
+    "gohugo"
   ],
   "author": "wuwu",
   "license": "ISC",
