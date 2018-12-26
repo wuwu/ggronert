@@ -6,6 +6,8 @@ sectionPagesMenu = "main"
 Paginate = 7
 pygmentsCodeFences = true
 pygmentsUseClasses = true
+archetypeDir = "krauter_content/archetypes"
+contentDir = "krauter_content/content"
 [sitemap]
   changefreq = "monthly"
   priority = 0.5
