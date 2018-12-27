@@ -28,3 +28,4 @@ publishDir= "docs"
   # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
   featured_image = "/images/gohugo-default-sample-hero-image.jpg"
   recent_posts_number = 2
+  custom_css = ['css/styles.css']
