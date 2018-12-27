@@ -22,14 +22,9 @@
     {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production") }}
     {{ template "_internal/google_analytics_async.html" . }}
     {{ end }}
-
-    {{ $options := (dict "outputStyle" "compressed" "enableSourceMap" true) }}
-    {{ $sass := resources.Get "scss/main.scss" }}
-    {{ $style := $sass | resources.ToCSS $options }}
-
-    {{ $test := $sass | resources.ExecuteAsTemplate "main.scss" . | resources.ToCSS }}
-
-    <link rel="stylesheet" href="{{ $test.Permalink }}" emotion="🤩">
+    {{ range .Site.Params.custom_css -}}
+    <link rel="stylesheet" href="{{ . | absURL }}">
+    {{- end }}
 
 </head>
 

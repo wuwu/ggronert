@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "website galerie gronert build with hugo & semantic ui",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "test:unit"
   },
