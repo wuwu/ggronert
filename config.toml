@@ -9,7 +9,7 @@ pygmentsCodeFences = true
 pygmentsUseClasses = true
 archetypeDir = "krauter_content/archetypes"
 contentDir = "krauter_content/content"
-publishDir= "docs"
+publishDir= "public"
 [sitemap]
   changefreq = "monthly"
   priority = 0.5
