@@ -7,7 +7,7 @@ public_folder: "img"
 collections: # A list of collections the CMS should be able to edit
   - name: "krauter" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Kraut" # Used in the UI, ie.: "New Post"
-    folder: "content_netlify_cms/content/kraut" # The path to the folder where the documents are stored
+    folder: "content_netlify_cms/kraut" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
@@ -15,7 +15,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "pages"
     label: "Pages"
     files:
-      - file: "content_netlify_cms/content/_index.md"
+      - file: "content_netlify_cms/_index.md"
         label: "Home Page"
         name: "home"
         fields:
