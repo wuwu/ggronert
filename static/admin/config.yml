@@ -2,7 +2,7 @@ backend:
   name: git-gateway
 
 media_folder: "static/images" # Folder where user uploaded files should go
-public_folder: "img"
+public_folder: "static/images"
 
 collections: # A list of collections the CMS should be able to edit
   - name: "krauter" # Used in routes, ie.: /admin/collections/:slug/edit
@@ -26,7 +26,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Intro Blurb", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-      
+
   - name: "pages"
     label: "Pages"
     files:
