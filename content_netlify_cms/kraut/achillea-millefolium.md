@@ -1,10 +1,19 @@
   
 ---
 
-title: 'Gewöhnliche Schafgarbe'
-description: 'Heilpflanzenliste mit Heilwirkungen.'
-featured_image: '/images/annie-spratt-746148-unsplash.jpg'
-date: "2015-01-21"
+title: Gewöhnliche Schafgarbe
+date: 2019/01/01
+wissenschaftlicher_name: Ajuga reptans
+volkstuemlicher_name: Kriech Günsel
+englischer_name: 
+pflanzen_familie: Lippenblütler (Lamiaceae)
+verwendete_pflanzenteile: lateinscher Name
+ernte_zeit: 'Mai, Juni'
+description: >-
+  Als Heilpflanze wirkt der kriechende Günsel beruhigend. Er wirkt gegen
+  Sodbrennen und Einschlafstörungen.
+featured_image: /public/images/ajuga-reptans-2x.jpg
+
 ---
 
 **ACHILLEA**

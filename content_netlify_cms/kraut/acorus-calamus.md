@@ -3,9 +3,9 @@ title: 'Gewöhnlicher Kalmus'
 slug: 'kalmus'
 latin: 'Acorus calamus'
 description: 'Kalmus ist eine ausdauernde und winterharte Sumpf— oder Wasserpflanze'
-
-
 ---
+
+
 
 **ACORUS**
 
