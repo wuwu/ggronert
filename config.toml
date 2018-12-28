@@ -8,7 +8,7 @@ Paginate = 7
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 archetypeDir = "krauter_content/archetypes"
-contentDir = "krauter_content/content"
+contentDir = "content_netlify_cms/content"
 publishDir= "public"
 [sitemap]
   changefreq = "monthly"
