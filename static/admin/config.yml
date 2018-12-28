@@ -18,6 +18,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Pflanzen Familie", name: "pflanzen_familie", widget: "string"}
       - {label: "Verwendete Pflanzenteile", name: "verwendete_pflanzenteile", widget: "string"}
       - {label: "Ernte", name: "ernte_zeit", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "list", default: ["Kraut"]}
       - {label: "Intro Blurb", name: "description", widget: "text"}
       - {label: "Image", name: "featured_image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
