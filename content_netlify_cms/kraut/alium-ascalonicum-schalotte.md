@@ -10,7 +10,8 @@ ernte_zeit: sdfdfg
 tags_ernte_zeit:
   - SDASD
 tags:
-  - Kraut
+  - Allicin
+  - antibakteriell
 description: >-
   Bei diesen fünf Arten der Gattung Allium handelt es sich, den zweijährigen
   Porree ausgenommen, um Stauden.
