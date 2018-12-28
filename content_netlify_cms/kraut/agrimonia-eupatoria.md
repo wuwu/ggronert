@@ -8,7 +8,7 @@ pflanzen_familie: Rosengewächse (Rosaceae)
 verwendete_pflanzenteile: Blühendes Kraut
 ernte_zeit: 'Mai, Juni'
 description: In Teemischungen für Sänger und Redner häufig anzutreffen
-featured_image: /public/images/agrimonia-eupatoria-2x.jpg
+featured_image: /images/agrimonia-eupatoria@2x.jpg
 ---
 
 

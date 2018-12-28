@@ -19,7 +19,7 @@ tags:
 description: >-
   Als Heilpflanze hat sich der Frauenmantel, wie der Name schon andeutet,
   hauptsächlich in der Frauenheilkunde bewährt...
-featured_image: /public/images/alchemilla-xanthochlora-2x.jpg
+featured_image: images/alchemilla-xanthochlora@2x.jpg
 ---
 **ALCHEMILLA**
 

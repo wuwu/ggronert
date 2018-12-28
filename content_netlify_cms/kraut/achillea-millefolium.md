@@ -12,7 +12,7 @@ ernte_zeit: 'Mai, Juni'
 description: >-
   Als Heilpflanze wirkt der kriechende Günsel beruhigend. Er wirkt gegen
   Sodbrennen und Einschlafstörungen.
-featured_image: /public/images/ajuga-reptans-2x.jpg
+featured_image: 'images/ajuga-reptans@2x.jpg'
 
 ---
 

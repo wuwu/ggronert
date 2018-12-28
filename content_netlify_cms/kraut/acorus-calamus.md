@@ -14,6 +14,8 @@ tags:
 description: >-
   Besondere Fähigkeiten entfaltet der Kalmus bei Magenbeschwerden, aber auch bei
   der Rauchentwöhnung leistet er gute Dienste.
+featured_image: images/acorus-calamus@2x.jpg
+
 ---
 
 
