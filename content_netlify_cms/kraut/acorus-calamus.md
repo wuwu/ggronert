@@ -1,8 +1,19 @@
 ---
-title: 'Gewöhnlicher Kalmus'
-slug: 'kalmus'
-latin: 'Acorus calamus'
-description: 'Kalmus ist eine ausdauernde und winterharte Sumpf— oder Wasserpflanze'
+title: Gewöhnlicher Kalmus
+date: 2018-12-28T13:31:25.479Z
+wissenschaftlicher_name: Acorus calamus
+volkstuemlicher_name: ' Ackermann, Ackerwurz, Bajonettstangen, Brustwurz, Kalmuswürze, Karmsen, Magenwurz, deutscher Ingwer, Zitwer'
+englischer_name: Sweet sedge
+pflanzen_familie: Aronstabgewächse  (Araceae)
+verwendete_pflanzenteile: Wurzelstock
+ernte_zeit: 'März, April, September, November'
+tags:
+  - Magen
+  - Acorin
+  - ''
+description: >-
+  Besondere Fähigkeiten entfaltet der Kalmus bei Magenbeschwerden, aber auch bei
+  der Rauchentwöhnung leistet er gute Dienste.
 ---
 
 
