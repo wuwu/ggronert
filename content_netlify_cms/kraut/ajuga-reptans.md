@@ -1,9 +1,9 @@
 ---
 title: Kriech Günsel
 date: 2019/01/01
-wissenschaftlicher_name: lateinscher Name
+wissenschaftlicher_name: Ajuga reptans
 volkstuemlicher_name: Kriech Günsel
-englischer_name: lateinscher Name
+englischer_name: 
 pflanzen_familie: Lippenblütler (Lamiaceae)
 verwendete_pflanzenteile: lateinscher Name
 ernte_zeit: 'Mai, Juni'
