@@ -1,18 +1,14 @@
 ---
-categories:
-- Development
-- VIM
-date: "2012-04-06"
-description: spf13-vim is a cross platform distribution of vim plugins and resources
-  for Vim.
-slug: spf13-vim-3-0-release-and-new-website
-tags:
-- .vimrc
-- plugins
-- spf13-vim
-- vim
-title: spf13-vim 3.0 release and new website
-
+title: Gewöhnlicher Odermennig
+date: '2012-04-06'
+wissenschaftlicher_name: Agrimonia eupatoria
+volkstuemlicher_name: 'Gewöhnlicher Odermennig, Leberklette'
+englischer_name: Agrimony
+pflanzen_familie: Rosengewächse (Rosaceae)
+verwendete_pflanzenteile: Blühendes Kraut
+ernte_zeit: 'Mai, Juni'
+description: In Teemischungen für Sänger und Redner häufig anzutreffen
+featured_image: /public/images/agrimonia-eupatoria-2x.jpg
 ---
 
 
