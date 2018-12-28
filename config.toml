@@ -7,7 +7,7 @@ sectionPagesMenu = "main"
 Paginate = 7
 pygmentsCodeFences = true
 pygmentsUseClasses = true
-archetypeDir = "krauter_content/archetypes"
+archetypeDir = "archetypes"
 contentDir = "content_netlify_cms"
 publishDir= "public"
 [sitemap]

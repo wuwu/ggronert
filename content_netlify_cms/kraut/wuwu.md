@@ -1,7 +1,6 @@
 ---
 title: 'Kraut xyz'
 date: '2019/01/01'
-slug: 'Slug here'
 wissenschaftlicher_name: 'lateinscher Name'
 volkstuemlicher_name: 'lateinscher Name'
 englischer_name: 'lateinscher Name'
@@ -10,12 +9,6 @@ verwendete_pflanzenteile: 'lateinscher Name'
 ernte_zeit: 'lateinscher Name'
 featured_image: '/images/404.jpg'
 description: 'short description here'
-categories:  -  Kategorie
-tags:  
--  Development  
--  Go  
--  fast  
--  Blogging
 
 ---
 

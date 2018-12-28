@@ -12,8 +12,14 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Wissenschaftlicher Name", name: "wissenschaftlicher_name", widget: "string"}
+      - {label: "Volkstümlicher Name", name: "volkstuemlicher_name", widget: "string"}
+      - {label: "Englischer Name", name: "englischer_name", widget: "string"}
+      - {label: "Pflanzen Familie", name: "pflanzen_familie", widget: "string"}
+      - {label: "Verwendete Pflanzenteile", name: "verwendete_pflanzenteile", widget: "string"}
+      - {label: "Ernte", name: "ernte_zeit", widget: "string"}
       - {label: "Intro Blurb", name: "description", widget: "text"}
-      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Image", name: "featured_image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
