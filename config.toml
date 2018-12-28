@@ -26,6 +26,6 @@ publishDir= "public"
   gitlab = ""
   linkedin = ""
   # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
-  featured_image = "/images/gohugo-default-sample-hero-image.jpg"
+  featured_image = "/images/Franz_Marc_-_Dog_Lying_in_the_Snow_-_Google_Art_Project.jpg"
   recent_posts_number = 2
   custom_css = ['css/styles.css']

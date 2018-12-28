@@ -1,8 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const AssetsPlugin = require('assets-webpack-plugin');
-const assetsPluginInstance = new AssetsPlugin()
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
@@ -72,8 +70,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "../../static/css/styles.css",
       chunkFilename: "[id].css",
-    }),
-    assetsPluginInstance
+    })
   ],
   devServer: {
     port: 3000,
