@@ -1,24 +1,26 @@
 .header {
-  color: rgba(255,255,255,.78);
   text-align: center;
-  text-shadow: 1px 1px 3px #000;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   h1, h2 {
     color: $whiteColor;
+    text-shadow: 1px 1px 3px #000;
+
   }
   &--cover {
     background-position: center;
     background-size: contain;
+    min-height: 420px;
   }
 
   &__topbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
+    background: rgba(0, 0, 0, 0.493);
+    height: 72px;
     .navigation--main {
       flex-grow: 1;
     }
@@ -31,7 +33,7 @@
 
 .logo {
   a {
-    color: $whiteColor;
+    color: $primaryColor;
     text-decoration: none;
 
     @include md {

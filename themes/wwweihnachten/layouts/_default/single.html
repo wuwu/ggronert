@@ -5,7 +5,6 @@
 {{ define "main" }}
 {{ $section := .Site.GetPage "section" .Section }}
 <section class="content">
-  <h2>_default/single</h2>
   <article>
     <header>
 {{if .PrevPage}} <a href="{{.PrevPage.Permalink}}">&lt;</a>{{end}}
@@ -13,12 +12,6 @@
       <h1>
         {{- .Title -}}
       </h1>
-      <p>
-        {{with .CurrentSection.Title }}{{. | upper }}{{end}}
-      </p>
-      <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
-        {{- .Date.Format "January 2, 2006" -}}
-      </time>
       {{/*
       Show "reading time" and "word count" but only if one of the following are true:
       1) A global config `params` value is set `show_reading_time = true`

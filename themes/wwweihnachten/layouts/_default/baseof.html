@@ -26,7 +26,6 @@
     <link rel="stylesheet" href="{{ . | absURL }}">
     {{- end }}
     {{ block "addstyles" . }}{{ end }}
-    <script src="//cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
     {{ block "addscripts" . }}{{ end }}
     {{ range .Site.Params.custom_js }}
     <script type="text/javascript" src="{{  . | absURL }}"></script>
