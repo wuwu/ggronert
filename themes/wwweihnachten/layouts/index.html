@@ -1,5 +1,7 @@
 {{ define "main" }}
 <section class="content">
+  {{ block "search" . }}{{ partial "molecules/search.html" .}}{{ end }}
+
   <article>
     {{ .Content }}
   </article>

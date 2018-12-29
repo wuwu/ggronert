@@ -1,13 +1,17 @@
-{{ if .Site.Menus.main }}
-<nav class="navigation navigation--main" role="navigation">
-      <ul>
-        {{ range .Site.Menus.main }}
-        <li class="item">
-          <a href="{{ .URL }}" title="{{ .Name }} page">
-            {{ .Name }}
-          </a>
-        </li>
-        {{ end }}
-      </ul>
-  </nav>
+{{- if .Site.Menus.main }}
+<nav class="menu">
+  <button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+    <span class="menu__btn-title" tabindex="-1">Menu</span>
+  </button>
+  <ul class="menu__list">
+    {{- $currentNode := . }}
+    {{- range sort .Site.Menus.main }}
+    {{- if .Name}}
+    <li class="menu__item{{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} menu__item--active{{end}}">
+      <a class="menu__link" href="{{ .URL }}">{{ .Name }}</a>
+    </li>
+    {{- end }}
+    {{- end }}
+  </ul>
+</nav>
 {{ end }}
