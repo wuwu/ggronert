@@ -1,0 +1,23 @@
+{{ $featured_image := .Params.featured_image }}
+{{ $post_type := .Type }}
+{{ $trival_name := index (split .Params.volkstuemlicher_name ",") 0 }}
+
+  <div class="teaser teaser--{{ $post_type }}">
+{{ if .Params.featured_image }}
+    {{ $featured_image := (trim $featured_image "/") | absURL }}
+    <div class="teaser__image">
+      <a href="{{.URL}}" class="link link--image">
+        <img src="{{ $featured_image }}" class="img" alt="image from {{ .Title }}">
+      </a>
+    </div>
+  {{end}}  
+  <div class="teaser__content">
+    <h3 class="teaser__headline">
+      <a href="{{ .URL }}" class="link black dim">
+        {{ .Title }}
+      </a>
+    </h3>
+<p><strong>{{ $trival_name }}</strong></p>
+      <p>{{ .Params.description }}</p>
+    </div>
+  </div>

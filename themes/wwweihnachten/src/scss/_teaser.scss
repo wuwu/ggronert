@@ -1,0 +1,24 @@
+.list {
+  margin-top: $defaultPadding;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.teaser {
+  &--kraut {
+    width: 240px;
+    background-color: $whiteColor;
+    margin-bottom: $defaultPadding * 2;
+  }
+  &__content {
+    padding: $defaultPadding * .5;
+  }
+  h3 {
+    margin-top: 0;
+    font-size: 1.22rem;
+  }
+  a {
+    text-decoration: none;
+    color: $primaryColor;
+  }
+}

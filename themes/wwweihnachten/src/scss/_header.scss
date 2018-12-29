@@ -6,9 +6,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  h1, h2 {
+    color: $whiteColor;
+  }
   &--cover {
     background-position: center;
-    background-size: cover;
+    background-size: contain;
   }
 
   &__topbar {
