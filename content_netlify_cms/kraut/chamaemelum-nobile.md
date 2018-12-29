@@ -1,5 +1,6 @@
 ---
 title: Chamaemelum nobile
+slug: Kamille
 date: 2018-12-28T15:15:52.237Z
 wissenschaftlicher_name: Anthemis nobilis
 volkstuemlicher_name: >-

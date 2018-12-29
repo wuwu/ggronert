@@ -13,7 +13,7 @@ verwendete_pflanzenteile: Wurzel
 tags_ernte_zeit:
   - Jan
   - Feb
-  - "Mar\tHorseradish"
+  - Mar
   - Sep
   - Okt
   - Nov

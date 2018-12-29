@@ -1,5 +1,6 @@
 ---
 title: Artemisia dracunculus - Estragon
+slug: Estragon
 date: 2018-12-28T15:28:06.889Z
 wissenschaftlicher_name: Artemisia dracunculus
 volkstuemlicher_name: >-

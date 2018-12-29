@@ -158,9 +158,7 @@ Sowohl von Zimmer— als auch von Freilandpflanzen können Blätter jederzeit ge
 
 ANGELICA
 
-A. archangelica subsp. archangelica (Erzengelwurz, Echte Engel—
-
-wurz)
+A. archangelica subsp. archangelica (Erzengelwurz, Echte Engelwurz)
 
   
 
