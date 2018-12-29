@@ -5,6 +5,7 @@
 {{ define "main" }}
 {{ $section := .Site.GetPage "section" .Section }}
 <section class="content">
+  <h2>_default/single</h2>
   <article>
     <header>
 {{if .PrevPage}} <a href="{{.PrevPage.Permalink}}">&lt;</a>{{end}}

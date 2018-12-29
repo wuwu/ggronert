@@ -10,6 +10,7 @@ pygmentsUseClasses = true
 archetypeDir = "archetypes"
 contentDir = "content_netlify_cms"
 publishDir= "public"
+
 [sitemap]
   changefreq = "monthly"
   priority = 0.5
@@ -29,3 +30,17 @@ publishDir= "public"
   featured_image = "/images/Franz_Marc_-_Dog_Lying_in_the_Snow_-_Google_Art_Project.jpg"
   recent_posts_number = 2
   custom_css = ['css/styles.css']
+  custom_js = ['js/app.js']
+
+[outputFormats.Algolia]
+  baseName = "algolia"
+  isPlainText = true
+  mediaType = "application/json"
+  notAlternative = true
+
+[params.algolia]
+  vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
+  params = ["categories", "tags"]
+
+[outputs]
+  home = ["HTML", "RSS", "Algolia"]

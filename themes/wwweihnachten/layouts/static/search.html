@@ -1,0 +1,24 @@
+{{ define "main" }}
+<section class="content">
+
+  <div id="search-box">
+    <!-- SearchBox widget will appear here -->
+  </div>
+  <div id="hits" class="my-4"  >
+    <!-- Hits widget will appear here -->
+  </div>
+
+  <div id="pagination">
+    <!-- Pagination widget will appear here -->
+  </div>
+</section>
+{{ end }}
+
+{{ define "addstyles" }}
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.7.1/dist/instantsearch.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.7.1/dist/instantsearch-theme-algolia.min.css">
+{{ end }}
+
+{{ define "addscripts" }}
+    <script src="//cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+{{ end }}

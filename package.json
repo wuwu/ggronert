@@ -4,7 +4,8 @@
   "description": "website galerie gronert build with hugo & semantic ui",
   "main": "index.js",
   "scripts": {
-    "test": "test:unit"
+    "test": "test:unit",
+    "algolia": "atomic-algolia"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/wuwu/ggronert/issues"
   },
-  "homepage": "https://github.com/wuwu/ggronert#readme"
+  "homepage": "https://github.com/wuwu/ggronert#readme",
+  "devDependencies": {
+    "atomic-algolia": "^0.3.17"
+  }
 }

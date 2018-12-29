@@ -1,41 +1,14 @@
-import instantsearch from 'instantsearch.js/es';
-import {
-  connectSearchBox
-} from 'instantsearch.js/es/connectors';
+  // initialize instantsearch
+  const search = instantsearch({
+    appId: 'QYX4R4E6V5',
+    apiKey: '59a2c8a7a9cea196a7a3c677b75cffe1',
+    indexName: 'krauter_compendium',
+    routing: true
+  });
 
-import {
-  searchBox, hits, pagination
-} from 'instantsearch.js/es/widgets';
-
-console.log('krauteratlas start II');
-const $appId = 'QYX4R4E6V5';
-const $apiKey = '59a2c8a7a9cea196a7a3c677b75cffe1';
-
-const search = instantsearch({
-  indexName: 'krauter_compendium',
-  searchClient: algoliasearch($appId, $apiKey),
-  routing: true
-});
-
-
-
-search.start();
-
-window.onload = () => {
-  const $hits = document.getElementById('hits');
-  const $searchBox = document.getElementById('search-box');
-  
-  console.log('start')
-
-  search.addWidget(
-    searchBox({
-      container: $searchBox,
-      placeholder: 'Search'
-    })
-  );
 search.addWidget(
-  hits({
-    container: $hits,
+  instantsearch.widgets.hits({
+    container: '#hits',
     templates: {
       empty: 'No results',
       // https://caniuse.com/#feat=template-literals
@@ -54,4 +27,21 @@ search.addWidget(
     }
   })
 );
-}
+
+search.addWidget(
+  instantsearch.widgets.searchBox({
+    container: '#search-box',
+    placeholder: 'Search'
+  })
+);
+
+search.addWidget(
+  instantsearch.widgets.pagination({
+    container: '#pagination',
+    maxPages: 20,
+    // default is to scroll to 'body', here we disable this behavior
+    // scrollTo: false
+  })
+);
+
+search.start();

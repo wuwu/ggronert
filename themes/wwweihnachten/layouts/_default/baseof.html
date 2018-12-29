@@ -25,7 +25,11 @@
     {{ range .Site.Params.custom_css -}}
     <link rel="stylesheet" href="{{ . | absURL }}">
     {{- end }}
-
+    {{ block "addstyles" . }}{{ end }}
+    {{ block "addscripts" . }}{{ end }}
+    {{ range .Site.Params.custom_js }}
+    <script type="text/javascript" src="{{  . | absURL }}"></script>
+    {{- end }}
 </head>
 
 <body>

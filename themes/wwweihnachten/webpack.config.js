@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   entry: ['./src/js/app.js', './src/scss/main.scss'],
@@ -70,7 +71,8 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "../../static/css/styles.css",
       chunkFilename: "[id].css",
-    })
+    }),
+    new Dotenv()
   ],
   devServer: {
     port: 3000,
@@ -81,5 +83,8 @@ module.exports = {
     aggregateTimeout: 300,
     poll: 1000,
     ignored: /node_modules/
+  },
+  node: {
+    fs: 'empty'
   }
 };
