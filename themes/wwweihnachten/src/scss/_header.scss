@@ -1,7 +1,6 @@
 .header {
   color: rgba(255,255,255,.78);
   text-align: center;
-  padding: $defaultPadding;
   text-shadow: 1px 1px 3px #000;
   display: flex;
   flex-direction: column;
@@ -27,7 +26,6 @@
   &.bg-black {
     background-color: $blackColor;
     height: 72px;
-
   }
 }
 
@@ -35,6 +33,10 @@
   a {
     color: $whiteColor;
     text-decoration: none;
-    font-size: 1.75rem;
+
+    @include md {
+      // 768px window width and more
+      font-size: 1.75rem;
+    }
   }
 }

@@ -49,6 +49,7 @@ search.addWidget(
           return value.toLowerCase().replace(' ', '-')
         })
         data.tags_text = tags.join(', ')
+        console.log('data', data)
         return data
       }
     }
