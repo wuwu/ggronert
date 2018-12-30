@@ -11,7 +11,8 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Gattung", name: "tags_gattung", widget: "list"}
+      - {label: "Familie", name: "tags_familie", widget: "list"}
       - {label: "Wissenschaftlicher Name", name: "wissenschaftlicher_name", widget: "string"}
       - {label: "Volkstümlicher Name", name: "volkstuemlicher_name", widget: "string", required: false}
       - {label: "Englischer Name", name: "englischer_name", widget: "string", required: false}
@@ -23,6 +24,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Intro Blurb", name: "description", widget: "text"}
       - {label: "Image", name: "featured_image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
 
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Post" # Used in the UI, ie.: "New Post"
