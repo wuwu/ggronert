@@ -1,30 +1,34 @@
 {{ $featured_image := .Params.featured_image }}
-<article class="article article--image">
-  <div>
-    <div>
-      {{ if .Params.featured_image }}
-      {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
-      {{ $featured_image := (trim $featured_image "/") | absURL }}
-      <div>
-        <a href="{{.URL}}" class="link link--image">
-          <img src="{{ $featured_image }}" class="img" alt="image from {{ .Title }}">
-        </a>
-      </div>
-      {{ end }}
-      <div class="blah w-100{{ if .Params.featured_image }} w-60-ns pl3-ns{{ end }}">
-        <h1>
-          <a href="{{.URL}}" class="link link--title">
-            {{ .Title }}
-          </a>
-        </h1>
-        <div class="copy link--nested">
-          {{ .Summary }}
-        </div>
-        <a href="{{.URL}}">
-          {{$.Param "read_more_copy" | default "read more" }}</a>
-        {{/* TODO: add author
-        <p class="copy">By {{ .Author }}</p> */}}
-      </div>
+<article class="teaser teaser--with-image">
+  {{ if .Params.featured_image }}
+  {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
+  {{ $featured_image := (trim $featured_image "/") | absURL }}
+  <div class="teaser__image">
+    <a href="{{.URL}}" class="link link--image">
+      <img src="{{ $featured_image }}" class="img" alt="image from {{ .Title }}">
+    </a>
+  </div>
+  {{ end }}
+  <div class="teaser__content">
+    <h1>
+      <a href="{{.URL}}" class="link link--title">
+        {{ .Title }}
+      </a>
+    </h1>
+    <div class="copy link--nested">
+    {{ if (isset .Params "description") }}
+      <h2>
+        {{ .Params.description }}
+      </h2>
+    {{ else }}
+      {{ .Summary }}
+    {{ end }}
     </div>
+    {{ if .Truncated }}
+    <div>
+      <a href="{{ .RelPermalink }}">{{$.Param "read_more_copy" | default "Mehr..." }}</a>
+    </div>
+    {{ end }}
+
   </div>
 </article>

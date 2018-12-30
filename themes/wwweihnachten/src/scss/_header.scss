@@ -13,29 +13,34 @@
     background-position: center;
     background-size: contain;
     min-height: 420px;
-  }
 
+    .header__topbar {
+      background: rgba(0, 0, 0, 0.493);
+      .logo a {
+        color: $primaryColor;
+      }
+    }
+  }
+  
   &__topbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(0, 0, 0, 0.493);
+    background: $primaryColor;
     height: 72px;
     .navigation--main {
       flex-grow: 1;
     }
   }
-  &.bg-black {
-    background-color: $blackColor;
-    height: 72px;
-  }
+
 }
 
 .logo {
   a {
-    color: $primaryColor;
+    color: $whiteColor;
     text-decoration: none;
-
+    padding-left: $defaultPadding * .5;
+    font-size: 1.25rem;
     @include md {
       // 768px window width and more
       font-size: 1.75rem;

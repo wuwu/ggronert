@@ -11,13 +11,17 @@ console.log('krauteratlas start II');
 const $appId = 'QYX4R4E6V5';
 const $apiKey = '59a2c8a7a9cea196a7a3c677b75cffe1';
 
-
+const arr = [1, 2, 3];
+const iAmJavascriptES6 = () => console.log(...arr);
+window.iAmJavascriptES6 = iAmJavascriptES6;
 
 window.onload = () => {
-  const $hits = document.getElementById('hits');
+  const $hits = document.getElementById('#hits');
   const $searchBox = document.getElementById('search-box');
-  const theToggle = document.getElementById('toggle');
-  
+  const $burgerBtn = document.querySelector('.btn--burger');
+  $burgerBtn.onclick = function () {
+    this.classList.toggle('active');
+  }
   if ($searchBox) {
     
     const search = instantsearch({
@@ -25,7 +29,8 @@ window.onload = () => {
       searchClient: algoliasearch($appId, $apiKey),
       routing: true
     });
-
+    search.start();
+    
     search.addWidget(
       searchBox({
         container: $searchBox,
@@ -53,50 +58,6 @@ window.onload = () => {
         }
       })
     );
-    search.start();
-  }
 
-  theToggle.onclick = function () {
-    toggleClass(this, 'on');
-    return false;
   }
 }
-
-
-
-// based on Todd Motto functions
-// https://toddmotto.com/labs/reusable-js/
-
-// hasClass
-function hasClass(elem, className) {
-  return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
-}
-// addClass
-function addClass(elem, className) {
-  if (!hasClass(elem, className)) {
-    elem.className += ' ' + className;
-  }
-}
-// removeClass
-function removeClass(elem, className) {
-  var newClass = ' ' + elem.className.replace(/[\t\r\n]/g, ' ') + ' ';
-  if (hasClass(elem, className)) {
-    while (newClass.indexOf(' ' + className + ' ') >= 0) {
-      newClass = newClass.replace(' ' + className + ' ', ' ');
-    }
-    elem.className = newClass.replace(/^\s+|\s+$/g, '');
-  }
-}
-// toggleClass
-function toggleClass(elem, className) {
-  var newClass = ' ' + elem.className.replace(/[\t\r\n]/g, " ") + ' ';
-  if (hasClass(elem, className)) {
-    while (newClass.indexOf(" " + className + " ") >= 0) {
-      newClass = newClass.replace(" " + className + " ", " ");
-    }
-    elem.className = newClass.replace(/^\s+|\s+$/g, '');
-  } else {
-    elem.className += ' ' + className;
-  }
-}
-

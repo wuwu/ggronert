@@ -4,7 +4,10 @@
   "description": "Default Theme for Hugo Sites",
   "main": "index.js",
   "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
     "assets-webpack-plugin": "^3.9.7",
+    "babel-loader": "^8.0.4",
     "css-loader": "^2.1.0",
     "dotenv-webpack": "^1.6.0",
     "extract-text-webpack-plugin": "^3.0.2",

@@ -14,13 +14,13 @@
         {{ . }}
       </h2>
       {{ end }}
-      <h1>{{ .Title | default .Site.Title }}</h1>
+      <h1 class="h3">{{ .Title | default .Site.Title }}</h1>
     </div>
   </div>
 </header>
 {{ else }}
-<header class="header {{ .Site.Params.background_color_class }}">
-    <div class="header__topbar topbar topbar--with-logo">
+<header class="header header--default">
+    <div class="header__topbar topbar--with-logo">
       {{ partial "atoms/logo.html" . }}
       {{ partial "molecules/site-navigation.html" . }}
     </div>

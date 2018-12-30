@@ -1,6 +1,8 @@
 {{- if .Site.Menus.main }}
 <nav class="menu">
-  <a href="#menu" id="toggle"><span></span></a>
+  <a href="#menu" id="toggle" class="btn btn--burger">
+    <span></span>
+  </a>
   <ul id="menu" class="menu__list">
     {{- $currentNode := . }}
     {{- range sort .Site.Menus.main }}

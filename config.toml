@@ -1,7 +1,7 @@
 #baseURL = "https://wuwu.github.io/ggronert/"
 baseURL = "https://krauteratlas.netlify.com/"
 languageCode = "en-us"
-title = "Krauter Garden"
+title = "hortus medicus"
 theme = "wwweihnachten"
 sectionPagesMenu = "main"
 Paginate = 12
@@ -10,6 +10,7 @@ pygmentsUseClasses = true
 archetypeDir = "archetypes"
 contentDir = "content_netlify_cms"
 publishDir= "public"
+summaryLength = 12
 
 [sitemap]
   changefreq = "monthly"
