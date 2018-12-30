@@ -24,7 +24,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Intro Blurb", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Testimonials", name: "testimonials", widget: "list", field: {label: "Image", name: image, widget: image}}
+      - {label: "Testimonials", name: "testimonials", widget: "list", fields: - {label: "Image", name: image, widget: image} - {label: "Name", name: image_name, widget: "string"}}
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Post" # Used in the UI, ie.: "New Post"
     folder: "content_netlify_cms/post" # The path to the folder where the documents are stored
