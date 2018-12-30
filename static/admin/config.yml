@@ -25,32 +25,14 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {
-          label: Presenters,
-          name: presenters,
-          required: true,
+          label: Images,
+          name: Images,
           widget: list,
           fields:
             [
-              { label: Name, name: name, required: true, widget: string },
-              {
-                label: Image,
-                name: image,
-                required: false,
-                hint: "If an image isn't specified, a default headshot placeholder image will be used",
-                widget: image,
-              },
-              { label: Text, name: text, required: true, widget: text },
-              {
-                label: Links,
-                name: links,
-                required: false,
-                widget: list,
-                fields:
-                  [
-                    { label: Text, name: linkText, widget: string },
-                    { label: URL, name: linkURL, widget: string },
-                  ],
-              },
+              { label: Image, name: image, widget: image },
+              { label: Title, name: image_title, required: true, widget: string },
+              { label: "Type", name: "tag_image_type", widget: "select", multiple: true, options: ["Foto", "Zeichnung","Featured","Andere"]}
             ],
           }
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
