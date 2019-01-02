@@ -1,0 +1,30 @@
+{{ define "header" }}
+{{ partial "organisms/site-header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+{{ $section := .Site.GetPage "section" .Section }}
+<section class="content">
+  <article>
+    <header>
+{{if .PrevPage}} <a href="{{.PrevPage.Permalink}}">&lt;</a>{{end}}
+{{if .NextPage}} <a href="{{.NextPage.Permalink}}">&gt;</a>{{end}}
+      <h1>
+        {{- .Title -}}
+      </h1>
+    </header>
+    <main>
+      {{- .Content -}}
+      <h2>tags:</h2>
+      {{- partial "tags.html" . -}}
+    </main>
+    <aside>
+      {{- partial "menu-contextual.html" . -}}
+    </aside>
+    <footer>
+      {{if .PrevPage}} <a href="{{.PrevPage.Permalink}}">back</a>{{end}}
+      {{if .NextPage}} <a href="{{.NextPage.Permalink}}">nächstes Kraut</a>{{end}}
+    </footer>
+  </article>
+</section>
+{{ end }}

@@ -12,6 +12,14 @@ contentDir = "content_netlify_cms"
 publishDir= "public"
 summaryLength = 12
 
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  kategorie = "tags_kategorie"
+  familie = "tags_familien"
+  gattung = "tags_gattung"
+  ernte = "tags_ernte_zeit"
+
 [sitemap]
   changefreq = "monthly"
   priority = 0.5
