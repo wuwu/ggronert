@@ -1,18 +1,36 @@
 ---
 title: Agastache foeniculum - Fenchel—Riesenysop
-date: 2018-12-28T23:00:00.000Z
+featured_image: /images/agastache-foeniculum@2x.jpg
 wissenschaftlicher_name: Foeniculum vulgare
 volkstuemlicher_name: 'Fenchel, Brotsamen, Enis, Femis, Fenikl, Fenis, Fenkel, Finchel, Frauenfenchel'
 englischer_name: Fennels
-pflanzen_familie: Doldenblütler (Apiaceae)
-verwendete_pflanzenteile: 'Früchte, Wurzel'
+tags_gattung:
+  - Agastache
+tags_familie:
+  - Lippenblütler (Lamiaceae)
+tags_kategorie:
+  - Würzkräuter
 tags_ernte_zeit:
   - Aug
   - Sep
 tags:
   - Kraut
+verwendete_pflanzenteile: 'Früchte, Wurzel'
 description: '75—90cm hohe Staude, deren Laub nach Anis duftet'
-featured_image: /images/agastache-foeniculum@2x.jpg
+date: 2018-12-28T23:00:00.000Z
+Images:
+  - image: /images/agastache-foeniculum@2x.jpg
+    image_title: Agastache foeniculum - Zeichnung
+    tag_image_type:
+      - Zeichnung
+  - image: /images/agastache_foeniculum.jpg
+    image_title: Agastache foeniculum - Zeichnung
+    tag_image_type:
+      - Zeichnung
+  - image: /images/agastache-foeniculum-foto.jpg
+    image_title: Agastache foeniculum - Foto
+    tag_image_type:
+      - Foto
 ---
 **AGASTACHE**
 
