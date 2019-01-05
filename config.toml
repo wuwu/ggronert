@@ -25,6 +25,9 @@ summaryLength = 12
   priority = 0.5
   filename = "sitemap.xml"
 
+[permalinks]
+    kraut = "/kraeuter/:slug"
+
 [params]
   favicon = ""
   description = "The last theme you'll ever need. Maybe."

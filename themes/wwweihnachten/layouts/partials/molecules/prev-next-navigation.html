@@ -1,0 +1,9 @@
+{{if .PrevPage}} <a href="{{.PrevPage.Permalink}}">&lt;</a>{{end}}
+{{if .NextPage}} <a href="{{.NextPage.Permalink}}">&gt;</a>{{end}}
+
+{{ with .NextInSection }}
+<a href="{{ .Permalink }}">{{ .Title }}</a>
+{{ end }}
+{{ with .PrevInSection }}
+<a href="{{ .Permalink }}">{{ .Title }}</a>
+{{ end }}
