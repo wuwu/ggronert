@@ -1,19 +1,39 @@
 ---
 title: Anthriscus cerefolium
-date: 2018-12-28T15:20:18.588Z
+featured_image: /images/anthriscus-cerefolium@2x.jpg
 wissenschaftlicher_name: Anthriscus cerefolium
-volkstuemlicher_name: 'Garten-Kerbel, Kerbel'
+volkstuemlicher_name: >-
+  Kerbel, Garten-Kerbel,  Chörblichrut (Graubünden bei Davos), Karweil
+  (Göttingen), Karwel (Ostfriesland), Kerbel (Mecklenburg), Kerbelkraut,
+  Kerbeln, Kervelda, Kerveln, Kerwel (Siebenbürgen), Kirbele, Kirfel,
+  Körbelkraut, Körblinkraut (Bern), Körffel, Keferfil und Suppenkräutel
+  (Österreich) 
 englischer_name: Chervil
-pflanzen_familie: Doldenblütler (Apiaceae)
-verwendete_pflanzenteile: Kraut
+tags_gattung:
+  - Kerbel (Anthriscus)
+tags_familie:
+  - Doldenblütler (Apiaceae)
+tags_kategorie:
+  - Würzkräuter
 tags_ernte_zeit:
   - Aug
   - Sep
 tags:
   - Kraut
   - Apiin
+verwendete_pflanzenteile: Kraut
 description: Ausser seinem feinem Aroma hat der Kerbel auch eine gewisse Heilwirkung.
-featured_image: /images/anthriscus-cerefolium@2x.jpg
+date: 2018-12-28T15:20:18.588Z
+Images:
+  - image: /images/anthriscus_cerefolium_illustration.jpg
+    image_title: Echter Kerbel
+    tag_image_type:
+      - Zeichnung
+  - image: /images/echter_kerbel_foto.jpg
+    image_title: Echter Kerbel - Foto (April)
+    tag_image_type:
+      - Foto
+      - Featured
 ---
 **ANTHRISCUS**
 
