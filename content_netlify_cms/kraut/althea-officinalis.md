@@ -1,23 +1,40 @@
 ---
 title: Althea officinalis
-date: 2018-12-28T14:58:33.388Z
+featured_image: /images/althaea-officinalis@2x.jpg
 wissenschaftlicher_name: Althea officinalis
 volkstuemlicher_name: >-
   Echter Eibisch, Adewurzel, Allee, Altee, Alter Thee, Alte Eh, Driantenwurzel,
   Eibsche, Flusskraut, Heilwurz, Heimischwurzel, Hilfwurz, Ibsche, Ipsche,
   Sammt-Pappel, Samtpappel, Schleimwurzel, Weisse Pappel, Weisswurzel
 englischer_name: Marsh Mallow
-pflanzen_familie: ' Malvengewächse (Malvaceae)'
-verwendete_pflanzenteile: ' Wurzel, Blätter, Blüten'
-ernte_zeit: 'September, Oktober, November'
+tags_gattung:
+  - Eibisch (Althaea)
+tags_familie:
+  - Malvengewächse (Malvaceae)
+tags_kategorie:
+  - Heilkräuter
 tags_ernte_zeit:
   - Sep
   - Okt
   - Nov
 tags:
   - Kraut
+verwendete_pflanzenteile: ' Wurzel, Blätter, Blüten'
 description: 'Sein wichtigster Inhaltsstoff ist der Schleim, der in grossen Mengen vorkommt.'
-featured_image: /images/althaea-officinalis@2x.jpg
+date: 2018-12-28T14:58:33.388Z
+Images:
+  - image: /images/echter_eibisch_foto.jpg
+    image_title: Echter Eibisch - Foto
+    tag_image_type:
+      - Foto
+      - Featured
+  - image: /images/althaea-officinalis@2x.jpg
+    image_title: Althea officinalis (Echter Eibisch) - Zeichnung
+    tag_image_type:
+      - Zeichnung
+Weblinks:
+  - link_title: wikipedia
+    link_url: 'https://de.wikipedia.org/wiki/Echter_Eibisch'
 ---
 **ALTHAEA**
 
