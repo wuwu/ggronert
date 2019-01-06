@@ -1,11 +1,15 @@
 ---
 title: Aloe vera
-date: 2018-12-28T14:54:08.798Z
+featured_image: /images/aloe-barbadensis@2x.jpg
 wissenschaftlicher_name: 'Aloe vera, A. barbadensis'
-volkstuemlicher_name: Wüstenlilie
+volkstuemlicher_name: 'Aloe Vera, Wüstenlilie'
 englischer_name: Aloe vera
-pflanzen_familie: Affodillgewächse (Asphodelaceae)
-verwendete_pflanzenteile: ' Das Gel in den Blättern'
+tags_gattung:
+  - Aloen (Aloe)
+tags_familie:
+  - Grasbaumgewächse (Xanthorrhoeaceae)
+tags_kategorie:
+  - Heilkräuter
 tags_ernte_zeit:
   - Jan
   - Feb
@@ -22,10 +26,24 @@ tags_ernte_zeit:
 tags:
   - Kraut
   - Brandwunden
+verwendete_pflanzenteile: ' Das Gel in den Blättern'
 description: >-
   In ihrer arabischen Heimat ist die Aloe schon seit über 6.000 Jahren als
   Heilpflanze bekannt.
-featured_image: /images/aloe-barbadensis@2x.jpg
+date: 2018-12-28T14:54:08.798Z
+Images:
+  - image: /images/aloe_vera_foto.jpg
+    image_title: Aloe Vera Foto
+    tag_image_type:
+      - Foto
+      - Featured
+  - image: /images/aloe-barbadensis@2x.jpg
+    image_title: Aloe Vera - Zeichnung (mit Blüte)
+    tag_image_type:
+      - Zeichnung
+Weblinks:
+  - link_title: wikipedia
+    link_url: 'https://de.wikipedia.org/wiki/Echte_Aloe'
 ---
 **ALOE**
 
