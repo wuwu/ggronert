@@ -34,6 +34,11 @@ Images:
     tag_image_type:
       - Foto
       - Featured
+Weblinks:
+  - link_title: Wikipedia
+    link_url: 'https://de.wikipedia.org/wiki/Echter_Kerbel'
+  - link_title: Kräuter-Buch.de - Verwendung
+    link_url: 'https://www.kraeuter-buch.de/kraeuter/Kerbel.html'
 ---
 **ANTHRISCUS**
 
