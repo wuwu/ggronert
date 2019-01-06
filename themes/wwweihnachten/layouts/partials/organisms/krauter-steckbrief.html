@@ -1,0 +1,35 @@
+<section>
+<h3>Steckbrief:</h3>
+<p>Wissenschaftlicher Name: <strong>{{ .Params.wissenschaftlicher_name}}</strong></p>
+<p>Englischer Name: <strong>{{ .Params.englischer_name}}</strong></p>
+<p>Familie:</p>
+<ul class="tags">
+  {{ range .Params.tags_familie }}
+  <li><a href="{{ "/kräuter/familie/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
+  {{ end }}
+</ul>
+<p>Gattung:</p>
+<ul class="tags">
+  {{ range .Params.tags_gattung }}
+  <li><a href="{{ "/kräuter/gattung/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
+  {{ end }}
+</ul>
+<p>Kategorie:</p>
+<ul class="tags">
+  {{ range .Params.tags_kategorie }}
+  <li><a href="{{ "/kräuter/kategorie/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
+  {{ end }}
+</ul>
+<p>Erntezeit:</p>
+<ul class="tags">
+  {{ range .Params.tags_ernte_zeit }}
+  <li><a href="{{ "/kräuter/erntezeit/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
+  {{ end }}
+</ul>
+<p>Tags:</p>
+<ul class="tags">
+  {{ range .Params.tags }}
+  <li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
+  {{ end }}
+</ul>
+</section>

@@ -1,4 +1,5 @@
 <section>
+<h3>Tags:</h3>
 <ul class="tags">
   {{ range .Params.tags_kategorie }}
   <li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>

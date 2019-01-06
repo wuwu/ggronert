@@ -16,7 +16,7 @@ summaryLength = 12
   tag = "tags"
   category = "categories"
   kategorie = "tags_kategorie"
-  familie = "tags_familien"
+  familie = "tags_familie"
   gattung = "tags_gattung"
   ernte = "tags_ernte_zeit"
 
@@ -27,10 +27,13 @@ summaryLength = 12
 
 [permalinks]
     kraut = "/kraeuter/:slug"
-
+    tags_ernte_zeit = "/kräuter/tags/erntezeit/:slug"
+    tags_kategorie = "/kräuter/kategorie/:slug"
+    tags_familie = "/kräuter/familie/:slug"
+    tags_gattung = "/kräuter/gattung/:slug"
 [params]
   favicon = ""
-  description = "The last theme you'll ever need. Maybe."
+  description = "Dein kleiner Kräuter Almanach"
   facebook = ""
   twitter = "https://twitter.com/GoHugoIO"
   instagram = ""
