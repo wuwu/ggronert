@@ -1,5 +1,5 @@
 ---
-title: Anthriscus cerefolium
+title: Kerbel
 featured_image: /images/anthriscus-cerefolium@2x.jpg
 wissenschaftlicher_name: Anthriscus cerefolium
 volkstuemlicher_name: >-
