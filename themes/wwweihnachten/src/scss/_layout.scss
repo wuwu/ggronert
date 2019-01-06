@@ -65,3 +65,12 @@
       "footer footer footer"
   }
 }
+
+.section__navigation {
+
+  @include md {
+    background-color: $primaryColor;
+    display: flex;
+    justify-content: space-between;   
+  }
+}

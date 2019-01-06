@@ -18,11 +18,11 @@
 {{ $related := .Site.RegularPages.Related . | first 15 }}
 
 {{ with $related }}
-  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
-    <p class="f5 b mb3">Related</p>
-    <ul class="pa0 list">
+  <div class="navigation navigation__related" role="navigation">
+    <h3>Related:</h3>
+    <ul>
 	   {{ range . }}
-	     <li  class="mb2">
+	     <li>
           <a href="{{ .RelPermalink }}">
             {{- .Title -}}
           </a>

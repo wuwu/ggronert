@@ -43,6 +43,7 @@ summaryLength = 12
   recent_posts_number = 2
   custom_css = ['css/styles.css']
   custom_js = ['js/app.js']
+  cms_url = 'https://krauteratlas.netlify.com/admin/#/collections'
 
 [outputFormats.Algolia]
   baseName = "algolia"

@@ -5,9 +5,11 @@
 {{ define "main" }}
 {{ $section := .Site.GetPage "section" .Section }}
 <section class="content">
-  <article>
+  <div class="section section--wide section__navigation">
     {{- partial "organisms/breadcrumbs.html" . -}}
     {{- partial "molecules/prev-next-navigation.html" . -}}
+  </div>
+  <article>
     <header>
       <h1>
         {{- .Title -}}
@@ -18,11 +20,10 @@
     </main>
     <aside>
       {{- partial "menu-contextual.html" . -}}
-      <h2>tags:</h2>
+      <h3>Tags:</h3>
       {{- partial "tags.html" . -}}
     </aside>
     <footer>
-      {{- partial "organisms/breadcrumbs.html" . -}}
     </footer>
   </article>
 </section>

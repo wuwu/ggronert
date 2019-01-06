@@ -1,9 +1,9 @@
-<div role="navigation" aria-label="breadcrumbs navigation">
+<div role="navigation" class="navigation navigation--breadcrumb" aria-label=" breadcrumbs navigation">
   {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
   {{ $.Scratch.Add "path" .Site.BaseURL }}
   {{ $.Scratch.Add "currentURL" .URL }}
   {{ $pageNotFound := (eq (replace $.Site.BaseURL .Site.BaseURL "404.html") .URL) }}
-  <ul class="wy-breadcrumbs">
+  <ul class="breadcrumbs">
     <li><a href="{{ .Site.BaseURL }}">Start</a>{{ if not (eq .URL "/") }} &raquo;{{ end }}</li>
     {{ range $index, $element := split $url "/" }}
     {{ $.Scratch.Add "path" $element }}
@@ -17,22 +17,31 @@
     {{ else if $pageNotFound }}
     <li>404</li>
     {{ else }}
+    {{ if isset $.Params "volkstuemlicher_name" }}
     {{ $trivial_name := index (split $.Page.Params.volkstuemlicher_name ",") 0 }}
-    {{ if isset $trivial_name }}
-        <li>{{ $trivial_name }}</li>
-        {{ else }}
-        <li>{{ $.Title }}</li>
+      <li>{{ $trivial_name | html }}</li>
+    {{ else }}
+<li>{{ $.Title | html }}</li>
     {{ end }}
     {{ end }}
     {{ end }}
     {{ end }}
 
+    {{/*  https://krauteratlas.netlify.com/admin/#/collections/krauter/entries/agastache-foeniculum  */}}
 
     {{ if and (not (or $pageNotFound (eq .URL "/"))) .IsPage }}
-    <li class="wy-breadcrumbs-aside">
-      <a href="/" class="fa fa-github"> Edit Page</a>
+    <li class="breadcrumbs-aside">
+    {{ $base := $.Site.Params.cms_url }}
+    {{$collection_name := "krauter/entries"}}
+    {{$page_name := .File.BaseFileName }}
+    {{$edit_url := print $base "/" $collection_name "/" $page_name}}
+    <a href="{{ $edit_url }}" class="fa fa-github">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path fill="none" d="M0 0h24v24H0V0z" />
+        <path d="M14.06 9.02l.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z" />
+      </svg>
+    </a>
     </li>
     {{ end }}
   </ul>
-  <hr />
 </div>

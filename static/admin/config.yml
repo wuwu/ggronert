@@ -35,6 +35,16 @@ collections: # A list of collections the CMS should be able to edit
               { label: "Type", name: "tag_image_type", widget: "select", multiple: true, options: ["Foto", "Zeichnung","Featured","Andere"]}
             ],
           }
+      - {
+          label: Weblinks,
+          name: Weblinks,
+          widget: list,
+          fields:
+            [
+              { label: Title, name: link_title, widget: string },
+              { label: Url, name: link_url, required: true, widget: string }
+            ],
+          }
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Post" # Used in the UI, ie.: "New Post"
     folder: "content_netlify_cms/post" # The path to the folder where the documents are stored
