@@ -17,6 +17,10 @@
       <h1 class="h3">{{ .Title | default .Site.Title }}</h1>
     </div>
   </div>
+  <div class="section section--wide section__navigation">
+    {{- partial "organisms/breadcrumbs.html" . -}}
+    {{- partial "molecules/prev-next-navigation.html" . -}}
+  </div>
 </header>
 {{ else }}
 <header class="header header--default">

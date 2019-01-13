@@ -11,13 +11,13 @@
   }
   &--cover {
     background-position: center;
-    background-size: contain;
-    min-height: 420px;
+    background-size: cover;
+    min-height: 320px;
 
     .header__topbar {
-      background: rgba(0, 0, 0, 0.493);
+      background: $primaryColor;
       .logo a {
-        color: $primaryColor;
+        color: $whiteColor;
       }
     }
   }
@@ -27,7 +27,7 @@
     justify-content: space-between;
     align-items: center;
     background: $primaryColor;
-    height: 72px;
+    height: 50px;
     .navigation--main {
       flex-grow: 1;
     }

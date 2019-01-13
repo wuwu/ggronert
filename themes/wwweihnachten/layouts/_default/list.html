@@ -4,14 +4,14 @@ This template is the same as the default and is here to demonstrate that if you 
 you can create a layouts directory, just for that section.
 */}}
 <section class="content">
-  {{ template "_internal/pagination.html" . }}
   <main class="">
     {{ .Content }}
     <section class="list">
-    {{ range .Paginator.Pages.ByTitle }}
+      {{ range .Paginator.Pages.ByTitle }}
       {{ .Render "summary" }}
-    {{ end }}
+      {{ end }}
     </section>
+    {{ template "_internal/pagination.html" . }}
   </main>
 </section>
 {{ end }}

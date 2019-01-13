@@ -5,10 +5,6 @@
 {{ define "main" }}
 {{ $section := .Site.GetPage "section" .Section }}
 <section class="content">
-  <div class="section section--wide section__navigation">
-    {{- partial "organisms/breadcrumbs.html" . -}}
-    {{- partial "molecules/prev-next-navigation.html" . -}}
-  </div>
   <article>
     <header>
       <h1>
@@ -20,13 +16,12 @@
     </main>
     <div class="images">
       <h1>images</h1>
-{{ range $key, $value := $.Page.Params.images }}
-  <p>{{ $key }} - {{ $value }}</p>
-    {{ range $key, $value := $value }}
-      <p>{{ $key }} - {{ $value }}</p>
+      {{ $images := $.Page.Params.images }}
+      {{ range  $images }}
+        {{ if in .tag_image_type "Featured" }}
+        <img src={{ .image }}/>
+        {{ end }}
       {{ end }}
-<p></p>
-{{ end }}
     </div>
     <aside>
       {{- partial "menu-contextual.html" . -}}

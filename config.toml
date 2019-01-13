@@ -28,9 +28,9 @@ summaryLength = 12
 [permalinks]
     kraut = "/kraeuter/:slug"
     tags_ernte_zeit = "/kraeuter/tags/erntezeit/:slug"
-    tags_kategorie = "/kraeuter/kategorie"
+    tags_kategorie = "/kraeuter/kategorie:slug"
     tags_familie = "/kraeuter/familie/:slug"
-    tags_gattung = "/kraeuter/gattung"
+    tags_gattung = "/kraeuter/gattung/:slug"
 [params]
   favicon = ""
   description = "Dein kleiner Kräuter Almanach"
