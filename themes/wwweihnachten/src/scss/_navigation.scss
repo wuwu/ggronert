@@ -1,6 +1,6 @@
 .menu {
   position: relative;
-  
+  margin-top: 24px;
   &:after {
     position: absolute;
     top: -15px;
@@ -15,38 +15,36 @@
   &__list {
 
     list-style: none;
-    position: relative;
+    position: absolute;
+    top: 30px;
+    right: -100px;
     width: 160px;
     padding: 10px;
     text-align: center;
     border-radius: 4px;
-    background: $whiteColor;
+    background: $primaryColor;
     /* just for this demo */
     opacity: 0;
     visibility: hidden;
-    display: none;
     margin: 0;
-
-    transition: opacity .4s;
+    transition: all .5s ease-out;
   }
   
   &__item {
-    padding-right: $defaultPadding;
     text-align: right;
 
     a {
-      color: $blackColor;
+      color: $whiteColor;
       font-family: $open-sans;
       text-decoration: none;
       font-weight: 700;
       padding: 5px;
-      color: $blackColor;
       text-decoration: none;
       transition: all .2s;
 
       &:hover,
       &:focus {
-        color: $primaryColor;
+        color: $blackColor;
       }
     }
   }
@@ -91,21 +89,22 @@
 
   &.active span:before {
     transform: rotate(45deg) translate(5px, 5px);
-    background-color: $primaryColor
+    background-color: $whiteColor;
   }
 
   &.active span:after {
     transform: rotate(-45deg) translate(7px, -8px);
-    background-color: $primaryColor
+    background-color: $whiteColor;
   }
 
 }
 
-#toggle.active+#menu {
+#toggle.active+.menu__list {
   opacity: 1;
   visibility: visible;
   display: flex;
   flex-direction: column;
+  right: 2px;
 }
 
 
@@ -120,3 +119,18 @@
     color: #333
   }
 }
+
+.navigation{
+
+  &--prev-next {
+
+    a {
+      background-color: $primaryColor;
+      display: inline-block;
+      padding: $defaultPadding * .25;
+      svg {
+        fill: $whiteColor;
+      }
+    }
+  }
+} 

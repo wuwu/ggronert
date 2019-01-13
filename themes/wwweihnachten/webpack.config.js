@@ -82,7 +82,7 @@ module.exports = {
     new Dotenv()
   ],
   devServer: {
-    port: 3000,
+    port: 1313,
     open: true
   },
   watch: true,
@@ -93,5 +93,6 @@ module.exports = {
   },
   node: {
     fs: 'empty'
-  }
+  },
+  devtool: 'source-map'
 };

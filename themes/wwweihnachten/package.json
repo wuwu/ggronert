@@ -24,6 +24,7 @@
   "scripts": {
     "build:production": "rm -rf ../static && webpack -p",
     "build": "webpack --mode development --config ./webpack.config.js",
+    "dev": "webpack",
     "start": "webpack-dev-server --mode development --config ./webpack.config.js"
   },
   "repository": {

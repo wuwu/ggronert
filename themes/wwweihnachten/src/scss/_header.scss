@@ -15,7 +15,7 @@
     min-height: 320px;
 
     .header__topbar {
-      background: $primaryColor;
+      background: rgba($primaryColor, .85);
       .logo a {
         color: $whiteColor;
       }
@@ -26,7 +26,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: $primaryColor;
+    background: rgba ($primaryColor, .85);
     height: 50px;
     .navigation--main {
       flex-grow: 1;

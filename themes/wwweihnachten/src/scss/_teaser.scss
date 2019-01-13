@@ -6,16 +6,16 @@
 }
 .teaser {
   &--kraut {
-    width: 240px;
+    width: 33%;
     background-color: $whiteColor;
     margin-bottom: $defaultPadding * 2;
   }
   &__content {
-    padding: $defaultPadding;
+    padding: 0 $defaultPadding * .5;
   }
-  h3 {
+  h4 {
     margin-top: 0;
-    font-size: 1.22rem;
+    font-size: 1.05rem;
   }
   a {
     text-decoration: none;
