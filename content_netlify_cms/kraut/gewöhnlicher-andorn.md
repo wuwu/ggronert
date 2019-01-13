@@ -1,5 +1,6 @@
 ---
 title: Gewöhnlicher Andorn
+featured_image: /images/marrubium_vulgare_1.jpg
 wissenschaftlicher_name: Marrubium vulgare
 volkstuemlicher_name: >-
   Gewöhnlicher Andorn, Weißer Andorn, Gemeiner Andorn, Helfkraut, Weißer Dorant,
