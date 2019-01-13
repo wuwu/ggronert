@@ -18,6 +18,16 @@
     <main>
       {{- .Content -}}
     </main>
+    <div class="images">
+      <h1>images</h1>
+{{ range $key, $value := $.Page.Params.images }}
+  <p>{{ $key }} - {{ $value }}</p>
+    {{ range $key, $value := $value }}
+      <p>{{ $key }} - {{ $value }}</p>
+      {{ end }}
+<p></p>
+{{ end }}
+    </div>
     <aside>
       {{- partial "menu-contextual.html" . -}}
       {{- partial "organisms/krauter-steckbrief.html" . -}}

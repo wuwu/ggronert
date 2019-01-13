@@ -13,15 +13,16 @@
     
     {{ if ne $element "" }}
     {{ if and (not $isLast) (not $pageNotFound) }}
-    <li><a href='{{ $.Scratch.Get "path" }}'>{{ title ( replace . "-" " ") }}</a> &raquo;</li>
+    {{ $title := title ( replace . "-" " ") }}
+<li><a href='{{ $.Scratch.Get "path" }}'>{{ htmlEscape $title }}</a> &raquo;</li>
     {{ else if $pageNotFound }}
     <li>404</li>
     {{ else }}
     {{ if isset $.Params "volkstuemlicher_name" }}
     {{ $trivial_name := index (split $.Page.Params.volkstuemlicher_name ",") 0 }}
-      <li>{{ $trivial_name | html }}</li>
+<li>{{ $trivial_name | htmlUnescape }}</li>
     {{ else }}
-<li>{{ $.Title | html }}</li>
+<li>{{ htmlUnescape $.Title }}</li>
     {{ end }}
     {{ end }}
     {{ end }}
